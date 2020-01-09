@@ -127,10 +127,10 @@ P5 3 0
 P5 4 0
 ```
 Amb */pie P2* s'obté:
-<center><img src='./bot/pieTest.jpg' width='300'></center>
+<center><img src='./bot/pieTest' width='300'></center>
 
 I finalment el que veiem amb */bar P2* és:
-<center><img src='./images_test/barTest.jpg' width='300'></center>
+<center><img src='./images_test/barTest' width='300'></center>
 
 ## Autor
 Fet per: Niebo Zhang [niebo.zhang@est.fib.upc.edu]
