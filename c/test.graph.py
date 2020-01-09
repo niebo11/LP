@@ -9,7 +9,7 @@ from antlr4.InputStream import InputStream
 from EnquestesVisitor import EnquestesVisitor
 
 if len(sys.argv) > 1:
-    input_stream = FileStream(sys.argv[1], encoding = 'utf-8')
+    input_stream = FileStream(sys.argv[1], encoding='utf-8')
 else:
     input_stream = InputStream(input('? '))
 lexer = EnquestesLexer(input_stream)

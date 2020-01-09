@@ -60,10 +60,11 @@ Els resultats de les enquestes es guardaran al mateix directori amb nom *IDEnque
 
 ## Execució
 
-Per executar el QuizBot només fa falta executar el següent:
+Per executar el QuizBot només fa falta executar la comanda següent:
 ```
 $ python3 bot.py
 ```
+I finalment ja podreu fer servir el QuizBot amb identificador **@JoanMuntanerBot** a Telegram
 
 ## Test existents
 
@@ -73,5 +74,63 @@ Existeixen 3 enquestes predefinits per testejar QuizBot:
 2. *enquesta2.txt* és una versió més complexa de *enquesta.txt*, conté una alternativa dins d'una pregunta que també és una alternativa. Aquesta versió ens permet testejar que les alternatives amb alternatives funcionen correctament.
 3. Finalment, *enquesta3.txt* és una versió ampliada de l'anterior, aquí s'ha ficat una pregunta més després de les alternatives. Aquesta versió ens permet veure que si encara queden preguntes després de finalitzar les alternatives, el QuizBot torna correctament fins a l'última pregunta.
 
+# Test
+
+Mostrarem un extracte del que pot fer el nostre QuizBot:
+```
+>> /quiz E
+Enquesta E:
+E> Quants adults viuen a casa teva?
+0: zero
+1: un
+2: dos
+3: més de dos
+>> 2
+E> Quants menors viuen a casa teva?
+0: zero
+1: un
+2: dos
+3: més de dos
+>> 1
+E> Com vas a la feina majoritàriament?
+1: caminant
+2: en cotxe
+3: en transport públic
+>> 3
+E> Quin mitja de transport utilitzes majoritàriament?
+1: Tren
+2: Bus
+3: Metro
+4: Altres
+>> 4
+E> Gràcies pel seu temps!
+```
+Finalment adjuntem les imatges obtinguts de les altres comandes, primer amb */report*:
+```
+pregunta valor respostes
+P1 0 2
+P1 1 1
+P1 2 2
+P1 3 1
+P2 0 0
+P2 1 0
+P2 2 4
+P2 3 2
+P3 1 3
+P3 2 0
+P3 3 3
+P4 1 0
+P4 2 0
+P5 1 3
+P5 2 0
+P5 3 0
+P5 4 0
+```
+Amb */pie P2* s'obté:
+<center><img src='./bot/pieTest.jpg' width='300'></center>
+
+I finalment el que veiem amb */bar P2* és:
+<center><img src='./images_test/barTest.jpg' width='300'></center>
+
 ## Autor
-Fet per: Niebo Zhang
+Fet per: Niebo Zhang [niebo.zhang@est.fib.upc.edu]
